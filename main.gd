@@ -18,8 +18,8 @@ func _process(delta):
 
 
 func _on_checkpoint_body_entered(body):
-	print(time, best_time)
-	if(time < best_time):
-		best_time = time
-	$HUD/best.text = "BEST: " + str(best_time) #.pad_zeros(3).left(6)
-	time = 0
+	if body.name == 'player':
+		if(time < best_time):
+			best_time = time
+		$HUD/best.text = "BEST: " + str(best_time).pad_zeros(3).left(6)
+		time = 0
