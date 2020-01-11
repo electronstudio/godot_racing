@@ -1,0 +1,390 @@
+[gd_scene load_steps=36 format=2]
+
+[ext_resource path="res://main.gd" type="Script" id=1]
+[ext_resource path="res://Sand road/road_sand87.png" type="Texture" id=2]
+[ext_resource path="res://Sand road/road_sand01.png" type="Texture" id=3]
+[ext_resource path="res://Sand road/road_sand12.png" type="Texture" id=4]
+[ext_resource path="res://Sand road/road_sand15.png" type="Texture" id=5]
+[ext_resource path="res://Sand road/road_sand17.png" type="Texture" id=6]
+[ext_resource path="res://Sand road/road_sand18.png" type="Texture" id=7]
+[ext_resource path="res://Sand road/road_sand23.png" type="Texture" id=8]
+[ext_resource path="res://Sand road/road_sand29.png" type="Texture" id=9]
+[ext_resource path="res://Sand road/road_sand38.png" type="Texture" id=10]
+[ext_resource path="res://Sand road/road_sand51.png" type="Texture" id=11]
+[ext_resource path="res://Sand road/road_sand53.png" type="Texture" id=12]
+[ext_resource path="res://Sand road/road_sand54.png" type="Texture" id=13]
+[ext_resource path="res://Sand road/road_sand02.png" type="Texture" id=14]
+[ext_resource path="res://Sand road/road_sand56.png" type="Texture" id=15]
+[ext_resource path="res://Sand road/road_sand65.png" type="Texture" id=16]
+[ext_resource path="res://Sand road/road_sand66.png" type="Texture" id=17]
+[ext_resource path="res://Sand road/road_sand68.png" type="Texture" id=18]
+[ext_resource path="res://Sand road/road_sand75.png" type="Texture" id=19]
+[ext_resource path="res://Sand road/road_sand79.png" type="Texture" id=20]
+[ext_resource path="res://Sand road/road_sand86.png" type="Texture" id=21]
+[ext_resource path="res://Sand road/road_sand04.png" type="Texture" id=22]
+[ext_resource path="res://Sand road/road_sand05.png" type="Texture" id=23]
+[ext_resource path="res://Sand road/road_sand06.png" type="Texture" id=24]
+[ext_resource path="res://Sand road/road_sand08.png" type="Texture" id=25]
+[ext_resource path="res://Sand road/road_sand09.png" type="Texture" id=26]
+[ext_resource path="res://Sand road/road_sand10.png" type="Texture" id=27]
+[ext_resource path="res://Sand road/road_sand11.png" type="Texture" id=28]
+[ext_resource path="res://racing_tileset.tres" type="TileSet" id=29]
+[ext_resource path="res://player.gd" type="Script" id=30]
+[ext_resource path="res://Cars/car_red_1.png" type="Texture" id=31]
+[ext_resource path="res://interface/fonts/kenvector_future_32.tres" type="DynamicFont" id=32]
+
+[sub_resource type="TileSet" id=1]
+0/name = "road_sand87.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 128, 128 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shapes = [  ]
+0/z_index = 0
+1/name = "road_sand01.png 1"
+1/texture = ExtResource( 3 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 128, 128 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shapes = [  ]
+1/z_index = 0
+2/name = "road_sand02.png 2"
+2/texture = ExtResource( 14 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 128, 128 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shapes = [  ]
+2/z_index = 0
+3/name = "road_sand04.png 3"
+3/texture = ExtResource( 22 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 128, 128 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shapes = [  ]
+3/z_index = 0
+4/name = "road_sand05.png 4"
+4/texture = ExtResource( 23 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 128, 128 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shapes = [  ]
+4/z_index = 0
+5/name = "road_sand06.png 5"
+5/texture = ExtResource( 24 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 128, 128 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shapes = [  ]
+5/z_index = 0
+6/name = "road_sand08.png 6"
+6/texture = ExtResource( 25 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 128, 128 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shapes = [  ]
+6/z_index = 0
+7/name = "road_sand09.png 7"
+7/texture = ExtResource( 26 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 128, 128 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shapes = [  ]
+7/z_index = 0
+8/name = "road_sand10.png 8"
+8/texture = ExtResource( 27 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 128, 128 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shapes = [  ]
+8/z_index = 0
+9/name = "road_sand11.png 9"
+9/texture = ExtResource( 28 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 128, 128 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shapes = [  ]
+9/z_index = 0
+10/name = "road_sand12.png 10"
+10/texture = ExtResource( 4 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 128, 128 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shapes = [  ]
+10/z_index = 0
+11/name = "road_sand15.png 11"
+11/texture = ExtResource( 5 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 0, 128, 128 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shapes = [  ]
+11/z_index = 0
+12/name = "road_sand17.png 12"
+12/texture = ExtResource( 6 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 0, 128, 128 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shapes = [  ]
+12/z_index = 0
+13/name = "road_sand18.png 13"
+13/texture = ExtResource( 7 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 0, 0, 128, 128 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shapes = [  ]
+13/z_index = 0
+14/name = "road_sand23.png 14"
+14/texture = ExtResource( 8 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 0, 0, 128, 128 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 0, 0 )
+14/navigation_offset = Vector2( 0, 0 )
+14/shapes = [  ]
+14/z_index = 0
+15/name = "road_sand29.png 15"
+15/texture = ExtResource( 9 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 0, 0, 128, 128 )
+15/tile_mode = 0
+15/occluder_offset = Vector2( 0, 0 )
+15/navigation_offset = Vector2( 0, 0 )
+15/shapes = [  ]
+15/z_index = 0
+16/name = "road_sand38.png 16"
+16/texture = ExtResource( 10 )
+16/tex_offset = Vector2( 0, 0 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 0, 0, 128, 128 )
+16/tile_mode = 0
+16/occluder_offset = Vector2( 0, 0 )
+16/navigation_offset = Vector2( 0, 0 )
+16/shapes = [  ]
+16/z_index = 0
+17/name = "road_sand51.png 17"
+17/texture = ExtResource( 11 )
+17/tex_offset = Vector2( 0, 0 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 0, 0, 128, 128 )
+17/tile_mode = 0
+17/occluder_offset = Vector2( 0, 0 )
+17/navigation_offset = Vector2( 0, 0 )
+17/shapes = [  ]
+17/z_index = 0
+18/name = "road_sand53.png 18"
+18/texture = ExtResource( 12 )
+18/tex_offset = Vector2( 0, 0 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 0, 0, 128, 128 )
+18/tile_mode = 0
+18/occluder_offset = Vector2( 0, 0 )
+18/navigation_offset = Vector2( 0, 0 )
+18/shapes = [  ]
+18/z_index = 0
+19/name = "road_sand54.png 19"
+19/texture = ExtResource( 13 )
+19/tex_offset = Vector2( 0, 0 )
+19/modulate = Color( 1, 1, 1, 1 )
+19/region = Rect2( 0, 0, 128, 128 )
+19/tile_mode = 0
+19/occluder_offset = Vector2( 0, 0 )
+19/navigation_offset = Vector2( 0, 0 )
+19/shapes = [  ]
+19/z_index = 0
+20/name = "road_sand56.png 20"
+20/texture = ExtResource( 15 )
+20/tex_offset = Vector2( 0, 0 )
+20/modulate = Color( 1, 1, 1, 1 )
+20/region = Rect2( 0, 0, 128, 128 )
+20/tile_mode = 0
+20/occluder_offset = Vector2( 0, 0 )
+20/navigation_offset = Vector2( 0, 0 )
+20/shapes = [  ]
+20/z_index = 0
+21/name = "road_sand65.png 21"
+21/texture = ExtResource( 16 )
+21/tex_offset = Vector2( 0, 0 )
+21/modulate = Color( 1, 1, 1, 1 )
+21/region = Rect2( 0, 0, 128, 128 )
+21/tile_mode = 0
+21/occluder_offset = Vector2( 0, 0 )
+21/navigation_offset = Vector2( 0, 0 )
+21/shapes = [  ]
+21/z_index = 0
+22/name = "road_sand66.png 22"
+22/texture = ExtResource( 17 )
+22/tex_offset = Vector2( 0, 0 )
+22/modulate = Color( 1, 1, 1, 1 )
+22/region = Rect2( 0, 0, 128, 128 )
+22/tile_mode = 0
+22/occluder_offset = Vector2( 0, 0 )
+22/navigation_offset = Vector2( 0, 0 )
+22/shapes = [  ]
+22/z_index = 0
+23/name = "road_sand68.png 23"
+23/texture = ExtResource( 18 )
+23/tex_offset = Vector2( 0, 0 )
+23/modulate = Color( 1, 1, 1, 1 )
+23/region = Rect2( 0, 0, 128, 128 )
+23/tile_mode = 0
+23/occluder_offset = Vector2( 0, 0 )
+23/navigation_offset = Vector2( 0, 0 )
+23/shapes = [  ]
+23/z_index = 0
+24/name = "road_sand75.png 24"
+24/texture = ExtResource( 19 )
+24/tex_offset = Vector2( 0, 0 )
+24/modulate = Color( 1, 1, 1, 1 )
+24/region = Rect2( 0, 0, 128, 128 )
+24/tile_mode = 0
+24/occluder_offset = Vector2( 0, 0 )
+24/navigation_offset = Vector2( 0, 0 )
+24/shapes = [  ]
+24/z_index = 0
+25/name = "road_sand79.png 25"
+25/texture = ExtResource( 20 )
+25/tex_offset = Vector2( 0, 0 )
+25/modulate = Color( 1, 1, 1, 1 )
+25/region = Rect2( 0, 0, 128, 128 )
+25/tile_mode = 0
+25/occluder_offset = Vector2( 0, 0 )
+25/navigation_offset = Vector2( 0, 0 )
+25/shapes = [  ]
+25/z_index = 0
+26/name = "road_sand86.png 26"
+26/texture = ExtResource( 21 )
+26/tex_offset = Vector2( 0, 0 )
+26/modulate = Color( 1, 1, 1, 1 )
+26/region = Rect2( 0, 0, 128, 128 )
+26/tile_mode = 0
+26/occluder_offset = Vector2( 0, 0 )
+26/navigation_offset = Vector2( 0, 0 )
+26/shapes = [  ]
+26/z_index = 0
+27/name = "road_sand87.png 27"
+27/texture = ExtResource( 2 )
+27/tex_offset = Vector2( 0, 0 )
+27/modulate = Color( 1, 1, 1, 1 )
+27/region = Rect2( 0, 0, 128, 128 )
+27/tile_mode = 0
+27/occluder_offset = Vector2( 0, 0 )
+27/navigation_offset = Vector2( 0, 0 )
+27/shapes = [  ]
+27/z_index = 0
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 33.9356
+height = 63.6551
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 40, 128 )
+
+[node name="racetrack" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="TileMap" type="TileMap" parent="."]
+visible = false
+tile_set = SubResource( 1 )
+cell_quadrant_size = 64
+format = 1
+tile_data = PoolIntArray( -458738, -1610612724, 0, -458736, -1610612724, 0, -458734, 536870914, 0, -327666, -1073741812, 0, -327664, -1610612722, 0, -327662, 1610612748, 0, -262141, 6, 0, -262139, 13, 0, -262138, 8, 0, -196592, 12, 0, -196590, 1610612748, 0, -131069, 1610612744, 0, -131067, 8, 0, 3, 12, 0, 14, -1610612724, 0, 16, 536870916, 0, 18, 536870915, 0, 131075, 12, 0, 131078, -1610612727, 0, 131079, -1073741823, 0, 131081, 1, 0, 131086, -1073741812, 0, 131088, -1610612722, 0, 131090, -536870907, 0, 262147, 12, 0, 262149, -1073741810, 0, 262151, 1610612752, 0, 262153, 1610612756, 0, 262160, 12, 0, 262162, 1610612748, 0, 393219, -1073741820, 0, 393221, -1073741798, 0, 393223, 1610612752, 0, 524291, -1073741821, 0, 524293, 1610612741, 0, 524295, 1610612738, 0, 524304, 1610612739, 0, 589838, 3, 0, 589840, -1610612728, 0, 720900, -1610612726, 0, 720910, -1073741819, 0, 851973, -1610612726, 0, 851982, -1073741820, 0, 917519, -1610612730, 0, 983047, -1610612727, 0, 983053, -1610612729, 0 )
+
+[node name="TileMap2" type="TileMap" parent="."]
+tile_set = ExtResource( 29 )
+cell_size = Vector2( 128, 128 )
+collision_friction = 0.5
+collision_bounce = 0.5
+format = 1
+tile_data = PoolIntArray( 0, 0, 524292, 1, 0, 655364, 2, 0, 655364, 3, 0, 655364, 4, 0, 655364, 5, 0, 655364, 6, 0, 655364, 7, 0, 655364, 8, 0, 655364, 9, 0, 655364, 10, 0, 458756, 65536, 0, 720899, 65537, 0, 327683, 65538, 0, 655362, 65539, 0, 655362, 65540, 0, 655362, 65541, 0, 655362, 65542, 0, 655362, 65543, 0, 655362, 65544, 0, 655362, 65545, 0, 262147, 65546, 0, 589827, 131072, 0, 720899, 131073, 0, 589827, 131074, 5, 524288, 131075, 5, 458752, 131076, 5, 458752, 131077, 5, 458752, 131078, 5, 458752, 131079, 5, 458752, 131080, 5, 393216, 131081, 0, 720899, 131082, 0, 589827, 196608, 0, 720899, 196609, 0, 589827, 196610, 5, 196608, 196611, 5, 131072, 196612, 5, 589824, 196613, 5, 131072, 196614, 5, 589824, 196615, 5, 131072, 196616, 5, 65536, 196617, 0, 720899, 196618, 0, 589827, 262144, 0, 720899, 262145, 0, 589827, 262146, 5, 196608, 262147, 5, 589824, 262148, 5, 131072, 262149, 5, 589824, 262150, 5, 131072, 262151, 5, 589824, 262152, 5, 65536, 262153, 0, 720899, 262154, 0, 589827, 327680, 0, 720899, 327681, 0, 589827, 327682, 5, 196608, 327683, 5, 131072, 327684, 5, 589824, 327685, 5, 131072, 327686, 5, 589824, 327687, 5, 131072, 327688, 5, 65536, 327689, 0, 720899, 327690, 0, 589827, 393216, 0, 720899, 393217, 0, 589827, 393218, 5, 196608, 393219, 5, 589824, 393220, 5, 131072, 393221, 5, 589824, 393222, 5, 131072, 393223, 5, 589824, 393224, 5, 65536, 393225, 0, 720899, 393226, 0, 589827, 458752, 0, 720899, 458753, 0, 589827, 458754, 5, 196608, 458755, 5, 131072, 458756, 5, 589824, 458757, 5, 131072, 458758, 5, 589824, 458759, 5, 131072, 458760, 5, 65536, 458761, 0, 720899, 458762, 0, 589827, 524288, 0, 1114113, 524289, 0, 983041, 524290, 5, 786432, 524291, 5, 720896, 524292, 5, 720896, 524293, 5, 720896, 524294, 5, 720896, 524295, 5, 720896, 524296, 5, 655360, 524297, 0, 720899, 524298, 0, 589827, 589824, 0, 720899, 589825, 0, 327682, 589826, 0, 1114112, 589827, 0, 655364, 589828, 0, 655364, 589829, 0, 655364, 589830, 0, 655364, 589831, 0, 655364, 589832, 0, 655364, 589833, 0, 262146, 589834, 0, 589827, 655360, 0, 524291, 655361, 0, 655362, 655362, 0, 983040, 655363, 0, 655362, 655364, 0, 655362, 655365, 0, 655362, 655366, 0, 655362, 655367, 0, 655362, 655368, 0, 655362, 655369, 0, 655362, 655370, 0, 458755 )
+
+[node name="player" type="RigidBody2D" parent="."]
+position = Vector2( 133.445, 1310 )
+gravity_scale = 0.0
+script = ExtResource( 30 )
+__meta__ = {
+"_edit_group_": true
+}
+STEERING = 150
+ACCELERATION = 10
+
+[node name="car_red_1" type="Sprite" parent="player"]
+position = Vector2( -0.320404, 0.359558 )
+texture = ExtResource( 31 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+current = true
+
+[node name="checkpoint" type="Area2D" parent="."]
+position = Vector2( 1060, 1290 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint"]
+shape = SubResource( 3 )
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="time" type="Label" parent="HUD"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = ExtResource( 32 )
+text = "TIME"
+
+[node name="best" type="Label" parent="HUD"]
+margin_left = 600.0
+margin_right = 708.0
+margin_bottom = 36.0
+custom_fonts/font = ExtResource( 32 )
+text = "BEST"
+[connection signal="body_entered" from="checkpoint" to="player" method="_on_checkpoint_body_entered"]
+[connection signal="body_entered" from="checkpoint" to="." method="_on_checkpoint_body_entered"]
