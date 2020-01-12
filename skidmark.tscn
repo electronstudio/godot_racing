@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Objects/skidmark_short_1.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="skidmark_short_1" type="Sprite" parent="."]
+texture = ExtResource( 1 )
