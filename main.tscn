@@ -27,12 +27,13 @@ tile_data = PoolIntArray( 0, 0, 524292, 1, 0, 655364, 2, 0, 655364, 3, 0, 655364
 position = Vector2( 120, 1220 )
 gravity_scale = 0.0
 continuous_cd = 2
-angular_damp = 4.0
+angular_damp = 10.0
 script = ExtResource( 3 )
-STEERING = 200
-ACCELERATION = 40
+STEERING = 300.0
+ACCELERATION = 50.0
 FRICTION = 2.0
-DRIFT_STEERING = 400
+DRIFT_FRICTION = 0.8
+DRIFT_STEERING = 600.0
 
 [node name="car_red_1" type="Sprite" parent="player"]
 position = Vector2( 5.96046e-08, 6.10352e-05 )

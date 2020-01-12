@@ -1,10 +1,10 @@
 extends RigidBody2D
 
-export var STEERING=100
-export var ACCELERATION=5
+export var STEERING=100.0
+export var ACCELERATION=5.0
 export var FRICTION=0.1
-export var DRIFT_FRICTION=1
-export var DRIFT_STEERING=100
+export var DRIFT_FRICTION=1.0
+export var DRIFT_STEERING=100.0
 #export var BREAKING=10
 	
 func _physics_process(delta):
