@@ -24,9 +24,12 @@ tile_data = PoolIntArray( 0, 0, 524292, 1, 0, 655364, 2, 0, 655364, 3, 0, 655364
 [node name="player" type="RigidBody2D" parent="."]
 position = Vector2( 133.445, 1310 )
 gravity_scale = 0.0
+angular_damp = 16.12
 script = ExtResource( 3 )
-STEERING = 150
-ACCELERATION = 10
+STEERING = 400
+ACCELERATION = 30
+FRICTION = 5.0
+BREAKING = 0
 
 [node name="car_red_1" type="Sprite" parent="player"]
 position = Vector2( -0.320404, 0.359558 )
