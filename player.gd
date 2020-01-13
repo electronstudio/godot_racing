@@ -46,7 +46,7 @@ func _physics_process(delta):
 #	else:
 #		linear_damp = 0
 	
-	var scalefactor = 1 + linear_velocity.length()/500
+	var scalefactor = 1.5 + linear_velocity.length()/1000
 	$Camera2D.zoom = lerp($Camera2D.zoom, Vector2(scalefactor, scalefactor), 0.01)
 
 	$engine.pitch_scale = linear_velocity.length()/1000 + 0.1

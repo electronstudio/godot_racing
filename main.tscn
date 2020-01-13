@@ -14,8 +14,9 @@
 [ext_resource path="res://Objects/tree_large.png" type="Texture" id=12]
 [ext_resource path="res://cone.tscn" type="PackedScene" id=13]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 31, 60 )
+[sub_resource type="CapsuleShape2D" id=5]
+radius = 31.0
+height = 58.0
 
 [sub_resource type="AudioStreamRandomPitch" id=2]
 audio_stream = ExtResource( 8 )
@@ -72,7 +73,7 @@ STEERING = 300.0
 ACCELERATION = 50.0
 FRICTION = 2.0
 DRIFT_FRICTION = 0.8
-DRIFT_STEERING = 500.0
+DRIFT_STEERING = 600.0
 Skidmarks = ExtResource( 4 )
 
 [node name="car_red_1" type="Sprite" parent="player"]
@@ -81,11 +82,12 @@ texture = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
 position = Vector2( -1, 0 )
-shape = SubResource( 1 )
+shape = SubResource( 5 )
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2( -1, 0 )
 current = true
+zoom = Vector2( 0.1, 0.1 )
 process_mode = 0
 limit_smoothed = true
 smoothing_enabled = true
