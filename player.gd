@@ -7,10 +7,7 @@ export var DRIFT_FRICTION=1.0
 export var DRIFT_STEERING=100.0
 
 export (PackedScene) var Skidmarks
-#export var BREAKING=10
-	
-#func _ready():
-#	$carsound.play()	
+
 
 func _physics_process(delta):
 	
@@ -51,7 +48,7 @@ func _physics_process(delta):
 	
 	var scalefactor = 1 + linear_velocity.length()/1000
 	$Camera2D.zoom = Vector2(scalefactor, scalefactor)
-	#$carsound.pitch_scale=4
+
 	$engine.pitch_scale = linear_velocity.length()/1000 + 0.1
 	
 #
