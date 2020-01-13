@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="godot_racing"
-run/main_scene="res://main.tscn"
+run/main_scene="res://racetrack.tscn"
 config/icon="res://icon.png"
 
 [display]
