@@ -56,3 +56,34 @@ func _physics_process(delta):
 
 func _on_player_body_entered(body):
 	$crash.play()
+
+
+
+
+
+func _on_steering_gui_input(event):
+	print(event)
+	if (event is InputEventScreenTouch or event is InputEventMouseButton) and event.pressed == false:
+			Input.action_press("steer_right", 0)
+	elif event is InputEventScreenTouch or InputEventScreenDrag or event is InputEventMouseButton:
+		var amount = (event.position.x-200)/150
+		print(amount)
+		Input.action_press("steer_right", amount)
+
+
+
+func _on_drift_pressed():
+	Input.action_press("drift", 1.0)
+
+
+func _on_drift_released():
+	Input.action_release("drift")
+
+
+func _on_accelerate_pressed():
+	Input.action_press("accelerate", 1.0)
+	
+
+
+func _on_accelerate_released():
+	Input.action_release("accelerate")
