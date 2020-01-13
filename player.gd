@@ -64,7 +64,7 @@ func _on_player_body_entered(body):
 func _on_steering_gui_input(event):
 	if (event is InputEventScreenTouch or event is InputEventMouseButton) and event.pressed == false:
 			Input.action_press("steer_right", 0)
-	elif event is InputEventScreenTouch or InputEventScreenDrag or event is InputEventMouseButton:
+	elif event is InputEventScreenTouch or InputEventScreenDrag: # or event is InputEventMouseButton:
 		var amount = (event.position.x-200)/150
 		Input.action_press("steer_right", amount)
 
