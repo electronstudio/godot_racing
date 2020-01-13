@@ -85,7 +85,6 @@ shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2( -1, 0 )
-rotating = true
 current = true
 process_mode = 0
 limit_smoothed = true
@@ -226,34 +225,49 @@ position = Vector2( 2830, -962 )
 texture = ExtResource( 12 )
 
 [node name="cone" parent="objects" instance=ExtResource( 13 )]
-position = Vector2( 2170, -940 )
+position = Vector2( 2370, -1120 )
 
 [node name="cone2" parent="objects" instance=ExtResource( 13 )]
-position = Vector2( 2240, -1170 )
+position = Vector2( 2540, -1120 )
 
 [node name="cone3" parent="objects" instance=ExtResource( 13 )]
-position = Vector2( 2440, -890 )
+position = Vector2( 2460, -1120 )
 
 [node name="cone4" parent="objects" instance=ExtResource( 13 )]
-position = Vector2( 2360, 1180 )
+position = Vector2( 530, 1220 )
 
 [node name="cone5" parent="objects" instance=ExtResource( 13 )]
-position = Vector2( 2550, -1000 )
+position = Vector2( 2620, -1120 )
 
 [node name="cone6" parent="objects" instance=ExtResource( 13 )]
-position = Vector2( 120, -740 )
+position = Vector2( -130, -750 )
 
 [node name="cone7" parent="objects" instance=ExtResource( 13 )]
-position = Vector2( 1200, -570 )
+position = Vector2( 2280, -1120 )
+
+[node name="cone11" parent="objects" instance=ExtResource( 13 )]
+position = Vector2( 2190, -1120 )
+
+[node name="cone12" parent="objects" instance=ExtResource( 13 )]
+position = Vector2( 2100, -1120 )
+
+[node name="cone13" parent="objects" instance=ExtResource( 13 )]
+position = Vector2( 2030, -1160 )
+
+[node name="cone14" parent="objects" instance=ExtResource( 13 )]
+position = Vector2( 1970, -1210 )
+
+[node name="cone15" parent="objects" instance=ExtResource( 13 )]
+position = Vector2( 1900, -1260 )
 
 [node name="cone8" parent="objects" instance=ExtResource( 13 )]
-position = Vector2( 1200, -650 )
+position = Vector2( 40, -900 )
 
 [node name="cone9" parent="objects" instance=ExtResource( 13 )]
-position = Vector2( 1200, -780 )
+position = Vector2( -10, -850 )
 
 [node name="cone10" parent="objects" instance=ExtResource( 13 )]
-position = Vector2( 1200, -860 )
+position = Vector2( -70, -800 )
 
 [node name="controls" type="CanvasLayer" parent="."]
 
@@ -279,7 +293,7 @@ rect_min_size = Vector2( 200, 200 )
 mouse_filter = 1
 color = Color( 0, 0.0117647, 0.305882, 0.329412 )
 
-[node name="drift" type="Label" parent="controls"]
+[node name="reverse" type="Label" parent="controls"]
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
@@ -288,9 +302,47 @@ margin_left = -200.0
 margin_top = -200.0
 mouse_filter = 1
 custom_fonts/font = ExtResource( 9 )
+text = "brake"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect2" type="ColorRect" parent="controls/reverse"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -200.0
+margin_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 200, 200 )
+mouse_filter = 1
+color = Color( 0, 0.0117647, 0.305882, 0.329412 )
+
+[node name="reverse" type="TouchScreenButton" parent="controls/reverse"]
+modulate = Color( 0.301961, 0.290196, 0.576471, 1 )
+show_behind_parent = true
+position = Vector2( 200, 100 )
+shape = SubResource( 4 )
+passby_press = true
+
+[node name="drift" type="Label" parent="controls"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -200.0
+margin_top = -660.0
+margin_bottom = -460.0
+mouse_filter = 1
+custom_fonts/font = ExtResource( 9 )
 text = "drift"
 align = 1
 valign = 1
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="ColorRect2" type="ColorRect" parent="controls/drift"]
 anchor_left = 1.0
@@ -349,6 +401,8 @@ passby_press = true
 [connection signal="body_entered" from="player" to="player" method="_on_player_body_entered"]
 [connection signal="body_entered" from="checkpoint" to="." method="_on_checkpoint_body_entered"]
 [connection signal="gui_input" from="controls/steering" to="player" method="_on_steering_gui_input"]
+[connection signal="pressed" from="controls/reverse/reverse" to="player" method="_on_reverse_pressed"]
+[connection signal="released" from="controls/reverse/reverse" to="player" method="_on_reverse_released"]
 [connection signal="pressed" from="controls/drift/drift" to="player" method="_on_drift_pressed"]
 [connection signal="released" from="controls/drift/drift" to="player" method="_on_drift_released"]
 [connection signal="pressed" from="controls/accelerate/accelerate" to="player" method="_on_accelerate_pressed"]

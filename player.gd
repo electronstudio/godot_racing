@@ -32,7 +32,7 @@ func _physics_process(delta):
 		skidmark.rotation = rotation
 		get_node("/root/racetrack/skidmarks").add_child(skidmark)
 	else:
-		var acceleration = Input.get_action_strength("accelerate") * Vector2.UP * ACCELERATION
+		var acceleration = (Input.get_action_strength("accelerate") - Input.get_action_strength("brake")) * Vector2.UP * ACCELERATION
 		apply_central_impulse(acceleration.rotated(rotation))
 		apply_torque_impulse(STEERING * steering ) #* clamp(linear_velocity.length()/300, 0, 1))
 		linear_damp = FRICTION
@@ -46,16 +46,18 @@ func _physics_process(delta):
 #	else:
 #		linear_damp = 0
 	
-	var scalefactor = 1 + linear_velocity.length()/1000
-	$Camera2D.zoom = Vector2(scalefactor, scalefactor)
+	var scalefactor = 1 + linear_velocity.length()/500
+	$Camera2D.zoom = lerp($Camera2D.zoom, Vector2(scalefactor, scalefactor), 0.01)
 
 	$engine.pitch_scale = linear_velocity.length()/1000 + 0.1
 	
-#
+	if Input.is_action_just_pressed("camera"):
+		$Camera2D.rotating = not $Camera2D.rotating
 
 
 func _on_player_body_entered(body):
 	$crash.play()
+
 
 
 
@@ -67,8 +69,6 @@ func _on_steering_gui_input(event):
 	elif event is InputEventScreenTouch or InputEventScreenDrag: # or event is InputEventMouseButton:
 		var amount = (event.position.x-200)/150
 		Input.action_press("steer_right", amount)
-
-
 
 func _on_drift_pressed():
 	Input.action_press("drift", 1.0)
@@ -82,6 +82,13 @@ func _on_accelerate_pressed():
 	Input.action_press("accelerate", 1.0)
 	
 
-
 func _on_accelerate_released():
 	Input.action_release("accelerate")
+
+
+func _on_reverse_pressed():
+	Input.action_press("brake", 1.0)
+
+
+func _on_reverse_released():
+	Input.action_release("brake")
