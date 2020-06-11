@@ -119,7 +119,6 @@ custom_fonts/font = ExtResource( 8 )
 text = "BEST:"
 
 [node name="objects" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="tribune_overhang_red" type="Sprite" parent="objects"]
 position = Vector2( 97.3584, 1542.39 )
@@ -255,7 +254,6 @@ position = Vector2( -10, -850 )
 position = Vector2( -70, -800 )
 
 [node name="controls" type="CanvasLayer" parent="."]
-editor/display_folded = true
 script = ExtResource( 13 )
 
 [node name="steering" type="Label" parent="controls"]
@@ -292,9 +290,6 @@ custom_fonts/font = ExtResource( 8 )
 text = "brake"
 align = 1
 valign = 1
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="ColorRect2" type="ColorRect" parent="controls/reverse"]
 anchor_left = 1.0
@@ -306,11 +301,14 @@ grow_vertical = 2
 rect_min_size = Vector2( 200, 200 )
 mouse_filter = 1
 color = Color( 0, 0.0117647, 0.305882, 0.329412 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="reverse" type="TouchScreenButton" parent="controls/reverse"]
 modulate = Color( 0.301961, 0.290196, 0.576471, 1 )
 show_behind_parent = true
-position = Vector2( 200, 100 )
+position = Vector2( -93.7725, -0.19397 )
 shape = SubResource( 4 )
 passby_press = true
 
@@ -319,16 +317,16 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -200.0
-margin_top = -660.0
-margin_bottom = -460.0
+margin_left = -201.629
+margin_top = -663.369
+margin_bottom = -463.369
 mouse_filter = 1
 custom_fonts/font = ExtResource( 8 )
 text = "drift"
 align = 1
 valign = 1
 __meta__ = {
-"_edit_group_": true
+"_edit_use_anchors_": false
 }
 
 [node name="ColorRect2" type="ColorRect" parent="controls/drift"]
@@ -341,11 +339,14 @@ grow_vertical = 2
 rect_min_size = Vector2( 200, 200 )
 mouse_filter = 1
 color = Color( 0, 0.0117647, 0.305882, 0.329412 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="drift" type="TouchScreenButton" parent="controls/drift"]
 modulate = Color( 0.301961, 0.290196, 0.576471, 1 )
 show_behind_parent = true
-position = Vector2( 200, 100 )
+position = Vector2( -92.3134, 0.29245 )
 shape = SubResource( 4 )
 passby_press = true
 
@@ -362,27 +363,29 @@ custom_fonts/font = ExtResource( 8 )
 text = "acc"
 align = 1
 valign = 1
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="ColorRect2" type="ColorRect" parent="controls/accelerate"]
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -200.0
-margin_top = -200.0
+margin_left = -200.973
+margin_top = -200.486
+margin_right = -0.972778
+margin_bottom = -0.486328
 grow_horizontal = 2
 grow_vertical = 2
 rect_min_size = Vector2( 200, 200 )
 mouse_filter = 1
 color = Color( 0, 0.0117647, 0.305882, 0.329412 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="accelerate" type="TouchScreenButton" parent="controls/accelerate"]
 modulate = Color( 0.301961, 0.290196, 0.576471, 1 )
 show_behind_parent = true
-position = Vector2( 200, 100 )
+position = Vector2( -94.2588, -2.13947 )
 shape = SubResource( 4 )
 passby_press = true
 [connection signal="body_entered" from="player" to="player" method="_on_player_body_entered"]
