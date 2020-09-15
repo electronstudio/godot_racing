@@ -86,4 +86,5 @@ quality/intended_usage/framebuffer_allocation=0
 quality/intended_usage/framebuffer_allocation.mobile=0
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
+batching/precision/uv_contract=true
 environment/default_environment="res://default_env.tres"
