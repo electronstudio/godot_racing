@@ -104,7 +104,7 @@ What happens if you change `Mass` of the cone in the Inspector?
 
 ## Other map objects
 
-In the FileSystem folder `Objects` you can find some decorate images.
+In the FileSystem folder `Objects` you can find some decorative images.
 Click the `objects` node and then drag them into the scene to create sprites. 
 
 ## Crash sound effect
@@ -114,7 +114,7 @@ Add an `AudioStreamPlayer` node as a child node of `player`. Rename it `crash`.
 In the Inspector find the empty `Stream`.  In the FileSystem find `sounds/qubodup-crash.ogg`.
 Drag this file on to the `Stream`.
 
-Increase the `Volume` a bit.  Decrease the `Pitch`.  (Click `Playing` to hear it)
+Increase the `Volume` a bit.  Decrease the `Pitch`.  (Click `Playing` to hear it.)
 
 Click on the `player` node.  Click on `Node` on the top right to view the signals.
 Double click signal `body_entered(body:Node)` and press `Connect` to connect it to the `player` script.
