@@ -7,6 +7,7 @@ Play online at https://electronstudio.github.io/godot_racing/
 
 Graphics
 * https://www.kenney.nl/assets/racing-pack
+
 Sound:
 * https://opengameart.org/content/car-tire-squeal-skid-loop
 * https://opengameart.org/content/crash-collision
