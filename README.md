@@ -1,6 +1,8 @@
 # godot_racing
 Example racing game for coderdojo
 
+Read the tutorial at https://electronstudio.github.io/godot_racing/tutorial
+
 Play online at https://electronstudio.github.io/godot_racing/
 
 # Credits
